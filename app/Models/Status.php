@@ -9,6 +9,7 @@ class Status extends Model
 {
     use HasFactory;
 
+    // karena disini menggunakan bahasa indonesia, nama tabel harus disesuaikan terlebih dahulu
     protected $table = 'status';
     protected $fillable = [
         'nama_status',

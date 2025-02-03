@@ -12,7 +12,8 @@ class ProdukController extends Controller
     // Untuk menampilkan halaman index produk
     public function index()
     {
-        $produks = Produk::all();
+        // Menampilkan produk yang hanya bisa dijual
+        $produks = Produk::where('status_id', '1')->get();
         return view('produk.index', compact('produks'));
     }
 

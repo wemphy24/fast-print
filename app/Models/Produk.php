@@ -10,6 +10,7 @@ class Produk extends Model
 {
     use HasFactory, SoftDeletes;
 
+    // karena disini menggunakan bahasa indonesia, nama tabel harus disesuaikan terlebih dahulu
     protected $table = 'produk';
     protected $fillable = [
         'nama_produk',
